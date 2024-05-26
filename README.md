@@ -7,7 +7,7 @@
 | Miguel Rojas        | 39215582  | rojas.miguel018@gmail.com | https://github.com/Migueerm/ejercitacion-ispc
 | Florencia Andrada   | 44788525  | florenciacarolina031@gmail.com | https://github.com/Flor3ncia-Andr4d4
 | Carlota Olmedo      | 41711170  | carlota_olmedo@hotmail.com| https://github.com/caolmedo
-| Guadalupe Mendoza   | 45934026  | despontinguadalupe@gmail.com | https://github.com/Guadamendoza
+| Guadalupe Mendoza   | 45934026  | despontinguadalupe@gmail.com |https://github.com/Guadamendoza/SolucionesPracticas 
 | Guadalupe Barrozo   | 40203672  | gbarrozosanchez@gmail.com | https://github.com/Guadalupe-S
 
 **Objetivo del Proyecto**
