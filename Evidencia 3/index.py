@@ -32,6 +32,30 @@ def main():
             elif opcion == "3":
 
               ############### FLOR CONTINUAR #########################
+               tareas.modificar_tarea()
+            elif opcion == "4":
+                tareas.eliminar_tarea()
+            elif opcion == "5":
+                categorias.ingreso_categoria()
+            elif opcion == "6":
+                categorias.listar_categoria()
+            elif opcion == "7":
+                categorias.modificar_categoria()
+            elif opcion == "8":
+                categorias.eliminar_categoria()
+            elif opcion == "0":
+                print("Saliendo del programa...")
+                break
+            else:
+                print("Opción inválida. Por favor, ingrese un número válido.")
+        except KeyboardInterrupt:
+            print("\nOperación interrumpida por el usuario. Saliendo del programa...")
+            break
+        except Exception as e:
+            print(f"Error inesperado: {e}")
+
+if __name__ == "__main__":
+    main()
 
 ### MODULO 2
 
