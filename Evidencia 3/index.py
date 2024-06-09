@@ -57,9 +57,47 @@ def main():
 if __name__ == "__main__":
     main()
 
-### MODULO 2
+### MODULO 2 INTEGRANTES GUADALUPE MENDOZA MELANIA
+
+lista_categoria=[]
+def ingreso_cateogoria():
+    nombre_categoria= input("ingrese el nombre de la categoria: ")
+    if nombre_categoria not in lista_categoria:
+         lista_categoria.append(nombre_categoria)
+         print (f"Categoría '{nomrbre_categoria}'añadida. ")
+    else:
+         print (f"La categoría'{nombre_categoria}' ya existe" )
 
 
+import categorias
+lista_tareas = []
+def ingreso_tarea():
+    categoria = input("Ingrese la categoría de la tarea: ")
+    if categoria not in lista_categorias:
+        crear_categoria = input("La categoría no existe. ¿Desea crearla? (si/no): ")
+        if crear_categoria.lower() == "si":
+            lista_categorias.append(categoria)
+            print(f"Categoría '{categoria}' creada.")
+        else:
+            print("No se creó la categoría.")
+            return
+        descripcion= input("ingrese la descripción de la tarea")
+    id_tarea = len(lista_tareas) + 1
+    tarea = { 'id': id_tarea,
+             'descripcion':descripcion,
+            'estado': 'pendiente',
+             'categoría':categoria }
+    lista_tareas.append(tarea)
+    print ("Tarea añadida con exito")
+
+def  marcar_tarea_completa():
+    id_tarea = int(input("Ingrese el ID de la tarea a marcar como completa: "))
+    for tarea in lista_tareas:
+        if tarea['id'] == id_tarea:
+            tarea['estado'] = 'completa'
+            print("Tarea marcada como completa.")
+            return
+    print("Tarea no encontrada.")
 
 
 lista_tareas = []
