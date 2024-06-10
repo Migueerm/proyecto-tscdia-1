@@ -76,7 +76,7 @@ El código que has compartido implementa una lista de tareas y dos funciones pri
 
 ### Componentes del código
 
-1. **lista_tareas**: Es una lista vacía que almacenará las tareas en forma de diccionarios. Cada tarea tendrá las siguientes claves: `id`, `descripcion`, `estado` y `categoria`.
+1. **lista_tareas**:  Es una lista vacía que almacenará las tareas en forma de diccionarios. Cada tarea tendrá las siguientes claves: `id`, `descripcion`, `estado` y `categoria`.
 
 ### Funciones del código
 
