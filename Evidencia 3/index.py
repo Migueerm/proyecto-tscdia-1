@@ -134,3 +134,73 @@ def listar_tareas():
         for tarea in lista_tareas:
             print(f"ID: {tarea['id']}, Descripción: {tarea['descripcion']}, Estado: {tarea['estado']}, Categoría: {tarea['categoria']}")
 
+
+
+#MODULO 3 CARLOTA OLMEDO
+
+
+def bienvenida():
+    print("¡Bienvenido a la aplicación de gestión de tareas!")
+
+def menu():
+    print("\nMenú de opciones:")
+    print("1. Ingreso de tarea")
+    print("2. Listar tareas")
+    print("3. Modificar tarea")
+    print("4. Eliminar tarea")
+    print("5. Ingreso de categoría")
+    print("6. Listar categorías")
+    print("7. Modificar categoría")
+    print("8. Eliminar categoría")
+    print("0. Salir")
+
+def opcion_invalida():
+    print("Opción inválida. Por favor, ingrese un número válido.")
+
+def salir_programa():
+    print("Saliendo del programa...")
+
+def operacion_cancelada():
+    print("\nOperación cancelada por el usuario.")
+
+def error_inesperado(error):
+    print(f"Error inesperado: {error}")
+
+def categoria_anadida(nombre_categoria):
+    print(f"Categoría '{nombre_categoria}' añadida.")
+
+def categoria_ya_existe(nombre_categoria):
+    print(f"La categoría '{nombre_categoria}' ya existe.")
+
+def categoria_modificada(nombre_original, nuevo_nombre):
+    print(f"Categoría '{nombre_original}' modificada a '{nuevo_nombre}'.")
+
+def categoria_no_existe(nombre_categoria):
+    print(f"La categoría '{nombre_categoria}' no existe.")
+
+def categoria_eliminada(nombre_categoria):
+    print(f"Categoría '{nombre_categoria}' eliminada.")
+
+def tarea_anadida():
+    print("Tarea añadida con éxito.")
+
+def tarea_no_encontrada(id_tarea):
+    print(f"Tarea con ID {id_tarea} no encontrada.")
+
+def tarea_eliminada(id_tarea):
+    print(f"Tarea con ID {id_tarea} eliminada.")
+
+def tarea_actualizada(id_tarea, nuevo_estado):
+    print(f"El estado de la tarea con ID {id_tarea} ha sido actualizado a '{nuevo_estado}'.")
+
+def tarea_listada(id_tarea, descripcion, estado, categoria):
+    print(f"ID: {id_tarea}, Descripción: {descripcion}, Estado: {estado}, Categoría: {categoria}")
+
+def no_hay_categorias():
+    print("No hay categorías para mostrar.")
+
+def no_hay_tareas():
+    print("No hay tareas para mostrar.")
+
+
+
