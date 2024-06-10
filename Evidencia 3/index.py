@@ -57,7 +57,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-### MODULO 2 INTEGRANTES GUADALUPE MENDOZA MELANIA
+### MODULO 2 INTEGRANTES GUADALUPE MENDOZA Y MELANIA
 
 lista_categoria=[]
 def ingreso_cateogoria():
