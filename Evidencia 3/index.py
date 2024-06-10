@@ -60,11 +60,11 @@ if __name__ == "__main__":
 ### MODULO 2 INTEGRANTES GUADALUPE MENDOZA Y MELANIA
 
 lista_categoria=[]
-def ingreso_cateogoria():
+def ingreso_categoria():
     nombre_categoria= input("ingrese el nombre de la categoria: ")
     if nombre_categoria not in lista_categoria:
          lista_categoria.append(nombre_categoria)
-         print (f"Categoría '{nomrbre_categoria}'añadida. ")
+         print (f"Categoría '{nombre_categoria}'añadida. ")
     else:
          print (f"La categoría'{nombre_categoria}' ya existe" )
 
@@ -73,10 +73,10 @@ import categorias
 lista_tareas = []
 def ingreso_tarea():
     categoria = input("Ingrese la categoría de la tarea: ")
-    if categoria not in lista_categorias:
+    if categoria not in lista_categoria:
         crear_categoria = input("La categoría no existe. ¿Desea crearla? (si/no): ")
         if crear_categoria.lower() == "si":
-            lista_categorias.append(categoria)
+            lista_categoria.append(categoria)
             print(f"Categoría '{categoria}' creada.")
         else:
             print("No se creó la categoría.")
