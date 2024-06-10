@@ -69,23 +69,27 @@ puede realizar dentro del programa.
 
 
 **• Modulos_Educategorias.py:** 
-Este archivo Python contiene una serie de funciones que están diseñadas para manejar diferentes 
-opciones relacionadas con las categorías. Cada función está relacionada con una operación 
-específica que se puede realizar en las categorías del sistema. 
+Este archivo Python contiene una serie de funciones que están diseñadas para manejar diferentes opciones relacionadas con las categorías. Cada función está relacionada con una
+operación específica que se puede realizar en las categorías del sistema. 
 Descripción de cada función:
-5. ingreso_categoria(): Esta función está relacionada con la operación de ingreso de 
+
+ ingreso_categoria(): Esta función está relacionada con la operación de ingreso de 
 una nueva categoría. Cuando se llama a esta función, imprime un mensaje indicando 
 que se ha seleccionado la opción de ingreso de categoría.
-6. listar_categoria(): Esta función está diseñada para listar las categorías existentes. Al 
+
+ listar_categoria(): Esta función está diseñada para listar las categorías existentes. Al 
 llamar a esta función, se imprime un mensaje indicando que se ha seleccionado la 
 opción de listar categorías.
-7. modificar_categoria(): Esta función está relacionada con la operación de modificar 
+
+ modificar_categoria(): Esta función está relacionada con la operación de modificar 
 una categoría existente. Al llamar a esta función, se imprime un mensaje indicando 
 que se ha seleccionado la opción de modificar categorías.
-8. eliminar_categoria(): Esta función se encarga de eliminar una categoría. Al llamar a 
+
+ eliminar_categoria(): Esta función se encarga de eliminar una categoría. Al llamar a 
 esta función, se imprime un mensaje indicando que se ha seleccionado la opción de 
 eliminar categorías.
-9. salir(): Esta función es para salir del programa o del menú de categorías. Al llamar a 
+
+ salir(): Esta función es para salir del programa o del menú de categorías. Al llamar a 
 esta función, se imprime un mensaje indicando que se ha seleccionado la opción de 
 salir.
 
