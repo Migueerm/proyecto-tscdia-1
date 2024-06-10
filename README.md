@@ -169,5 +169,25 @@ Esta función lista todas las tareas almacenadas en `lista_tareas` con sus detal
 
 
 
-**Módulo 3** 
+**modulo_3.py** 
 Esta parte del código define distintas funciones de salida de acuerdo a las acciones que se realicen previamente, de acuerdo a las selecciones realizadas en los módulos 1 y 2. 
+
+Descripción de la salida de cada función:
+bienvenida(): Esta funcion realiza un mensaje de bienvenida. 
+menu(): Esta funcion indica la ejecución del menú, recuperando las distintas opciones.
+opcion_invalida(): Esta funcion indica que la opción es inválida
+salir_programa(): Esta funcion indica que se está saliendo del programa
+operacion_cancelada(): Esta funcion indica que la operación fue cancelada.
+error_inesperado(error): Esta funcion indica que hubo un error inesperado. 
+categoria_anadida(nombre_categoria): Esta funcion indica que se añadió una categoría
+categoria_ya_existe(nombre_categoria):Esta funcion indica que la categoría ingresada ya existe.
+categoria_modificada(nombre_original, nuevo_nombre): Esta función indica que se modificó un nombre de una categoría.
+categoria_no_existe(nombre_categoria): Esta funcion indica que la categoría no existe. 
+categoria_eliminada(nombre_categoria): Esta funcion indica que se eliminó una categoría
+tarea_anadida(): Esta función indica que se agregó una tarea con éxito. 
+tarea_no_encontrada(id_tarea): Esta funcion indica que la tarea no ha sido encontrada.
+tarea_eliminada(id_tarea): Esta funcion indica que la tarea ha sido eliminada. 
+tarea_actualizada(id_tarea, nuevo_estado): Esta funcion indica que el estado de la tarea ha sido actualizado un nuevo estado, recuperando el ID y el Estado.
+tarea_listada(id_tarea, descripcion, estado, categoria): Esta funcion indica la descripción de la tarea listada, recuperando el ID, Descripción, Estado y Categoría
+no_hay_categorias(): Esta funcion indica que no hay categorías para mostrar.
+no_hay_tareas(): Esta funcion indica que no hay tareas para mostrar.
