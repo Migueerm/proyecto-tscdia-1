@@ -43,3 +43,13 @@ EduTarea SRL, especialistas en aplicaciones móviles de gestión de tareas, se d
 **Interfaz Amigable:**
 - Diseño intuitivo y fácil de usar, adaptado a las necesidades de los estudiantes.
 - Personalización de temas y colores para una experiencia de usuario más agradable.
+
+
+# MODULARIZACIÓN - Aplicación EduTarea
+
+**Descripción general**
+Esta aplicación permite gestionar tareas, permitiendo al usuario crear, modificar y listar tareas con diferentes estados y categorías. La aplicación está modularizada para facilitar el mantenimiento y la escalabilidad.
+
+
+**Módulo 2**
+Este código es un fragmento del gestor de tareas simple, permitiendo a los usuarios modificar el estado de las tareas y listar todas las tareas existentes. El uso de una lista para almacenar las tareas y las funciones específicas para manipular estas tareas facilita la gestión y el mantenimiento del código.
