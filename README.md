@@ -55,14 +55,17 @@ Esta aplicación permite gestionar tareas, permitiendo al usuario crear, modific
 Este fragmento de código es un programa de gestión de tareas que interactúa con los módulos 
 tareas y categorías, los cuales contienen funciones relacionadas con las operaciones de tareas y 
 categorías respectivamente.
-1. Importación de módulos:
+
+ Importación de módulos:
 • Las líneas import tareas y import categorias importan los módulos tareas y 
 categorias, respectivamente. Estos módulos contienen funciones 
 relacionadas con las operaciones de tareas y categorías en el programa.
-2. Definición de funciones de ayuda:
+
+ Definición de funciones de ayuda:
 • La función mostrar_bienvenida() está diseñada para imprimir un mensaje 
 de bienvenida cuando el programa se inicia. Esto proporciona una 
 introducción amigable al usuario al comenzar a usar la aplicación.
+
 • La función mostrar_menu() imprime un menú de opciones disponible para 
 el usuario. Esto permite que el usuario vea todas las operaciones que 
 puede realizar dentro del programa.
