@@ -71,3 +71,34 @@ Este código es un fragmento del gestor de tareas simple, permitiendo a los usua
 
 4. **Uso de formato de cadena**:
    - Utiliza una f-string para formatear la salida de cada tarea, mostrando sus atributos (`id`, `descripcion`, `estado`, `categoria`).
+
+El código que has compartido implementa una lista de tareas y dos funciones principales para gestionar estas tareas. Aquí está la descripción de cada componente y función:
+
+### Componentes del código
+
+1. **lista_tareas**: Es una lista vacía que almacenará las tareas en forma de diccionarios. Cada tarea tendrá las siguientes claves: `id`, `descripcion`, `estado` y `categoria`.
+
+### Funciones del código
+
+#### 1. `modificar_estado_tarea()`
+Esta función permite al usuario modificar el estado de una tarea específica basada en su ID. A continuación se detalla el proceso:
+
+1. **Entrada del ID de la tarea**: solicita al usuario que ingrese el ID de la tarea que desea modificar.
+2. **Búsqueda de la tarea**: busca en `lista_tareas` la tarea cuyo ID coincida con el ingresado.
+3. **Verificación de la existencia de la tarea**:
+   - Si la tarea existe:
+     - Muestra las opciones de estado disponibles: Pendiente, Realizada, Observada.
+     - Solicita al usuario que seleccione el nuevo estado ingresando el número correspondiente.
+     - Actualiza el estado de la tarea si la opción ingresada es válida.
+     - Informa al usuario sobre la actualización del estado.
+   - Si la tarea no existe:
+     - Informa al usuario que la tarea no fue encontrada.
+
+#### 2. `listar_tareas()`
+Esta función lista todas las tareas almacenadas en `lista_tareas` con sus detalles:
+
+1. **Verificación de tareas**:
+   - Si no hay tareas en `lista_tareas`, informa al usuario que no hay tareas para mostrar.
+   - Si hay tareas:
+     - Muestra el listado de tareas con sus detalles (ID, descripción, estado y categoría).
+
