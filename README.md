@@ -79,15 +79,16 @@ El código que has compartido implementa una lista de tareas y dos funciones pri
 1. **lista_tareas**: Es una lista vacía que almacenará las tareas en forma de diccionarios. Cada tarea tendrá las siguientes claves: `id`, `descripcion`, `estado` y `categoria`.
 
 ### Funciones del código
-- 'ingreso_categoria()':Incluye funciones para ingresar categorías y listar las categorías existentes. El usuario debe ingresar el nombre de una categoria que luego sera guardada en una lista "lista_categoria".
 
-  ### 'ingreso_tarea()':
+- `ingreso_categoria()`:Incluye funciones para ingresar categorías y listar las categorías existentes. El usuario debe ingresar el nombre de una categoria que luego sera guardada en una lista "lista_categoria".
+
+  ### `ingreso_tarea()`:
   1. Permite al usuario **ingresar una tarea** y **almacenarla en una lista** “lista_tareas”.   A su vez le permite ingresar 
  la categoría de la tarea, y en el caso de que no exista dicha categoría el usuario tiene la opción de crearla.
  2. Tambien solicita que ingrese la **descripion de la tarea**. Se intrduce un ID de la tarea y luego se crea un diccionario con los siguientes campos: ID, descripcion, estado y categoria.
 - Finalmente se **añade a la lista** de tareas y se le **notifica** al usuario que su tarea fue añadida con exito.
   
-- ### 'marcar_tarea_completa()':
+- ### `marcar_tarea_completa()`:
   1. Se le solicita al usuario que **ingrese el ID** de la tarea que desea marcar como completa.
   2. Luego la funcion **recorre la lista** de tareas ("lista_tareas") para ver si se encuentra el ID de la tarea ingresada, 
   3.Si se encuentra el estado de la tarea se muestra como **"tarea completa"**, se **notifica** al usuario y la funcion finaliza, por el contrario, si el ID  no fue encontrado se le **notifica** al usuario que la tarea no fue encontrada.  
