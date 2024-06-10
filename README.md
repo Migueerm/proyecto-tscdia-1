@@ -102,3 +102,7 @@ Esta función lista todas las tareas almacenadas en `lista_tareas` con sus detal
    - Si hay tareas:
      - Muestra el listado de tareas con sus detalles (ID, descripción, estado y categoría).
 
+
+
+**Módulo 3** 
+Esta parte del código define distintos prints de salida de acuerdo a las acciones que se realicen previamente, de acuerdo a las selecciones realizadas en los módulos 1 y 2. 
