@@ -87,7 +87,7 @@ Incluye funciones para ingresar categorías y listar las categorías existentes.
   1. Permite al usuario **ingresar una tarea** y **almacenarla en una lista** “lista_tareas”.   A su vez le permite ingresar 
  la categoría de la tarea, y en el caso de que no exista dicha categoría el usuario tiene la opción de crearla.
  2. Tambien solicita que ingrese la **descripion de la tarea**. Se intrduce un ID de la tarea y luego se crea un diccionario con los siguientes campos: ID, descripcion, estado y categoria.
-- Finalmente se **añade a la lista** de tareas y se le **notifica** al usuario que su tarea fue añadida con exito.
+3. Finalmente se **añade a la lista** de tareas y se le **notifica** al usuario que su tarea fue añadida con exito.
   
 - ### `marcar_tarea_completa()`:
   1. Se le solicita al usuario que **ingrese el ID** de la tarea que desea marcar como completa.
