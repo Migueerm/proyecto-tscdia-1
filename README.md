@@ -51,26 +51,46 @@ EduTarea SRL, especialistas en aplicaciones móviles de gestión de tareas, se d
 Esta aplicación permite gestionar tareas, permitiendo al usuario crear, modificar y listar tareas con diferentes estados y categorías. La aplicación está modularizada para facilitar el mantenimiento y la escalabilidad.
 
 **MODULO 1**
-**-index.py:** 
-
-PIMERA PARTE ECHA POR FLORENCIA ANDRADA Y  MIGUEL ROJAS
-Este fragmento de código es un programa de gestión de tareas que interactúa con los módulos tareas y categorías, los cuales contienen funciones relacionadas con las operaciones de tareas y categorías respectivamente.
-
+**index.py:**
+Este fragmento de código es un programa de gestión de tareas que interactúa con los módulos 
+tareas y categorías, los cuales contienen funciones relacionadas con las operaciones de tareas y 
+categorías respectivamente.
 1. Importación de módulos:
-	○ Las líneas import tareas y import categorias importan los módulos tareas y categorias, respectivamente. Estos módulos contienen funciones relacionadas con las operaciones de tareas y categorías en el programa.
+• Las líneas import tareas y import categorias importan los módulos tareas y 
+categorias, respectivamente. Estos módulos contienen funciones 
+relacionadas con las operaciones de tareas y categorías en el programa.
 2. Definición de funciones de ayuda:
-	○ La función mostrar_bienvenida() está diseñada para imprimir un mensaje de bienvenida cuando el programa se inicia. Esto proporciona una introducción amigable al usuario al comenzar a usar la aplicación.
-	○ La función mostrar_menu() imprime un menú de opciones disponible para el usuario. Esto permite que el usuario vea todas las operaciones que puede realizar dentro del programa.
+• La función mostrar_bienvenida() está diseñada para imprimir un mensaje 
+de bienvenida cuando el programa se inicia. Esto proporciona una 
+introducción amigable al usuario al comenzar a usar la aplicación.
+• La función mostrar_menu() imprime un menú de opciones disponible para 
+el usuario. Esto permite que el usuario vea todas las operaciones que 
+puede realizar dentro del programa.
 
-	**- Modulos_Educategorias.py:** 
-Este archivo Python contiene una serie de funciones que están diseñadas para manejar diferentes opciones relacionadas con las categorías. Cada función está relacionada con una operación específica que se puede realizar en las categorías del sistema. 
 
- Descripción de cada función:
-	1. ingreso_categoria(): Esta función  está relacionada con la operación de ingreso de una nueva categoría. Cuando se llama a esta función, imprime un mensaje indicando que se ha seleccionado la opción de ingreso de categoría.
-	2. listar_categoria(): Esta función está diseñada para listar las categorías existentes. Al llamar a esta función, se imprime un mensaje indicando que se ha seleccionado la opción de listar categorías.
-	3. modificar_categoria(): Esta función está relacionada con la operación de modificar una categoría existente. Al llamar a esta función, se imprime un mensaje indicando que se ha seleccionado la opción de modificar categorías.
-	4. eliminar_categoria(): Esta función se encarga de eliminar una categoría. Al llamar a esta función, se imprime un mensaje indicando que se ha seleccionado la opción de eliminar categorías.
-	5. salir(): Esta función es para salir del programa o del menú de categorías. Al llamar a esta función, se imprime un mensaje indicando que se ha seleccionado la opción de salir.
+**• Modulos_Educategorias.py:** 
+Este archivo Python contiene una serie de funciones que están diseñadas para manejar diferentes 
+opciones relacionadas con las categorías. Cada función está relacionada con una operación 
+específica que se puede realizar en las categorías del sistema. 
+Descripción de cada función:
+5. ingreso_categoria(): Esta función está relacionada con la operación de ingreso de 
+una nueva categoría. Cuando se llama a esta función, imprime un mensaje indicando 
+que se ha seleccionado la opción de ingreso de categoría.
+6. listar_categoria(): Esta función está diseñada para listar las categorías existentes. Al 
+llamar a esta función, se imprime un mensaje indicando que se ha seleccionado la 
+opción de listar categorías.
+7. modificar_categoria(): Esta función está relacionada con la operación de modificar 
+una categoría existente. Al llamar a esta función, se imprime un mensaje indicando 
+que se ha seleccionado la opción de modificar categorías.
+8. eliminar_categoria(): Esta función se encarga de eliminar una categoría. Al llamar a 
+esta función, se imprime un mensaje indicando que se ha seleccionado la opción de 
+eliminar categorías.
+9. salir(): Esta función es para salir del programa o del menú de categorías. Al llamar a 
+esta función, se imprime un mensaje indicando que se ha seleccionado la opción de 
+salir.
+
+
+
 
 
 
