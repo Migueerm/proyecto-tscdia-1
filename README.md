@@ -53,3 +53,21 @@ Esta aplicación permite gestionar tareas, permitiendo al usuario crear, modific
 
 **Módulo 2**
 Este código es un fragmento del gestor de tareas simple, permitiendo a los usuarios modificar el estado de las tareas y listar todas las tareas existentes. El uso de una lista para almacenar las tareas y las funciones específicas para manipular estas tareas facilita la gestión y el mantenimiento del código.
+
+1. **Comprueba si la lista de tareas está vacía**:
+   - La función verifica si la variable `lista_tareas` no contiene ninguna tarea.
+   - Si `lista_tareas` está vacía, imprime "No hay tareas para mostrar."
+
+2. **Muestra el listado de tareas**:
+   - Si hay tareas en `lista_tareas`, imprime un encabezado "Listado de Tareas:".
+   - Recorre cada tarea en `lista_tareas` utilizando un bucle `for`.
+
+3. **Imprime los detalles de cada tarea**:
+   - Para cada tarea en la lista, imprime los detalles de la tarea en un formato específico:
+     - `ID`: Identificador de la tarea.
+     - `Descripción`: Descripción de la tarea.
+     - `Estado`: Estado de la tarea (por ejemplo, completada o pendiente).
+     - `Categoría`: Categoría a la que pertenece la tarea.
+
+4. **Uso de formato de cadena**:
+   - Utiliza una f-string para formatear la salida de cada tarea, mostrando sus atributos (`id`, `descripcion`, `estado`, `categoria`).
