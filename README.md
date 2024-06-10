@@ -80,7 +80,7 @@ El código que has compartido implementa una lista de tareas y dos funciones pri
 
 ### Funciones del código
 
-- `ingreso_categoria()`:Incluye funciones para ingresar categorías y listar las categorías existentes. El usuario debe ingresar el nombre de una categoria que luego sera guardada en una lista "lista_categoria".
+- ###`ingreso_categoria()`Incluye funciones para ingresar categorías y listar las categorías existentes. El usuario debe ingresar el nombre de una categoria que luego sera guardada en una lista "lista_categoria".
 
   ### `ingreso_tarea()`:
   1. Permite al usuario **ingresar una tarea** y **almacenarla en una lista** “lista_tareas”.   A su vez le permite ingresar 
