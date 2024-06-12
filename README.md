@@ -61,40 +61,44 @@ Al comprender las necesidades específicas de cada segmento de usuarios, podemos
 
 **Estructura del Diseño**
 
--Datos de Entrada:
-Para agregar una tarea en una categoría:
-Descripción de la tarea.
-Categoría a la que pertenece la tarea (opción de crear una nueva categoría si no existe).
-Para marcar una tarea como completa:
-ID de la tarea que se desea marcar como completa.
-Para modificar el estado de una tarea:
-ID de la tarea que se desea modificar.
-Nuevo estado de la tarea (pendiente, completa u observada).
-Para listar las tareas:
-Opción para filtrar por categoría (opcional).
-Para listar las categorías:
+- Datos de Entrada:
+	Para agregar una tarea en una categoría:
+		○ Descripción de la tarea.
+		○ Categoría a la que pertenece la tarea (opción de crear una nueva categoría si no existe).
+	Para marcar una tarea como completa:
+		○ ID de la tarea que se desea marcar como completa.
+	Para modificar el estado de una tarea:
+		○ ID de la tarea que se desea modificar.
+		○ Nuevo estado de la tarea (pendiente, completa u observada).
+	Para listar las tareas:
+		○ Opción para filtrar por categoría (opcional).
+	Para listar las categorías:
 No requiere datos de entrada adicionales.
-Proceso:
-Agregar una Tarea en una Categoría:
-Verificar si la categoría especificada existe.
-Si la categoría no existe, ofrecer la opción de crearla.
-Crear una nueva tarea con la descripción y categoría proporcionadas.
-Agregar la tarea a la lista de tareas.
-Marcar como Completa la Tarea:
-Buscar la tarea por su ID.
-Cambiar el estado de la tarea a "completa".
-Modificar el Estado de la Tarea:
-Buscar la tarea por su ID.
-Actualizar el estado de la tarea al nuevo estado especificado.
-Listar las Tareas:
-Mostrar todas las tareas almacenadas.
-Opcionalmente, filtrar las tareas por categoría si se especifica.
-Lista de Categorías:
-Mostrar todas las categorías disponibles almacenadas en la lista.
-Salida:
+
+
+- Proceso:
+	Agregar una Tarea en una Categoría:
+		○ Verificar si la categoría especificada existe.
+		○ Si la categoría no existe, ofrecer la opción de crearla.
+		○ Crear una nueva tarea con la descripción y categoría proporcionadas.
+		○ Agregar la tarea a la lista de tareas.
+	Marcar como Completa la Tarea:
+		○ Buscar la tarea por su ID.
+		○ Cambiar el estado de la tarea a "completa".
+	Modificar el Estado de la Tarea:
+		○ Buscar la tarea por su ID.
+		○ Actualizar el estado de la tarea al nuevo estado especificado.
+	Listar las Tareas:
+		○ Mostrar todas las tareas almacenadas.
+		○ Opcionalmente, filtrar las tareas por categoría si se especifica.
+	Lista de Categorías:
+		○ Mostrar todas las categorías disponibles almacenadas en la lista.
+
+- Salida:
 Confirmaciones de acciones realizadas con éxito (por ejemplo, tarea agregada, tarea marcada como completa, etc.).
 Listados de tareas y categorías según las solicitudes del usuario.
 Mensajes de error en caso de que ocurran problemas durante el proceso.
+
 
 
 
