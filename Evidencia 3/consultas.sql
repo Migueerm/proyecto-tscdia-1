@@ -37,3 +37,31 @@ DELETE FROM inscripcion WHERE ID_Estudiante = '004' AND ID_Curso = '14';
 DELETE FROM inscripcion WHERE ID_Estudiante = '005' AND ID_Curso = '15';
 DELETE FROM inscripcion WHERE ID_Estudiante = '006' AND ID_Curso = '16';
 DELETE FROM inscripcion WHERE ID_Estudiante = '007' AND ID_Curso = '17';
+
+##Selecciono una tabla mostrando todos los datos
+SELECT * FROM estudiante;
+
+##Seleccion de columnas de una tabla
+SELECT Nombre_Curso, Descripción_Curso, Codigo_Curso FROM curso;
+
+##Where en una sola tabla
+SELECT * FROM curso WHERE Codigo_Curso = '11';
+
+##Where y Between en una sola tabla
+SELECT * FROM estudiante WHERE Edad BETWEEN 20 AND 25;
+
+##Where utilizando limit
+SELECT * FROM estudiante LIMIT 3;
+
+##Inner Join
+SELECT estudiante.Nombre_Apellido, curso.Nombre_Curso
+FROM inscripción
+INNER JOIN estudiante ON inscripción.ID_Estudiante = estudiante.ID_Estudiante
+INNER JOIN curso ON inscripción.ID_Curso = curso.ID_Curso;
+
+##Inner join con filtros
+SELECT estudiante.Nombre_Apellido, curso.Nombre_Curso
+FROM inscripción
+INNER JOIN estudiante ON inscripción.ID_Estudiante = estudiante.ID_Estudiante
+INNER JOIN curso ON inscripción.ID_Curso = curso.ID_Curso
+WHERE estudiante.Edad BETWEEN 20 AND 25; 
