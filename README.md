@@ -45,6 +45,60 @@ EduTarea SRL, especialistas en aplicaciones móviles de gestión de tareas, se d
 - Personalización de temas y colores para una experiencia de usuario más agradable.
 
 
+**2.Análisis y diseño**
+**Análisis de Requisitos del Usuario:**
+-Investigación de Usuarios:
+Para comprender las necesidades y preferencias de los estudiantes en cuanto a la gestión de tareas, llevamos a cabo una exhaustiva investigación que incluyó encuestas, entrevistas y análisis de mercado. A través de estas actividades, pudimos obtener información valiosa sobre los comportamientos y hábitos de los estudiantes en relación con la gestión de sus tareas académicas.
+
+Nuestros hallazgos indican que la mayoría de los estudiantes valoran la capacidad de organizar sus tareas de manera eficiente, establecer fechas límite claras y recibir recordatorios o notificaciones para mantenerse al tanto de sus responsabilidades académicas. Además, muchos estudiantes expresaron la necesidad de una aplicación que les permita gestionar no solo tareas individuales, sino también proyectos más grandes con múltiples sub-tareas y fechas de vencimiento.
+
+Segmentación de Usuarios:durante nuestro proceso de investigación, identificamos varios grupos demográficos de usuarios con diferentes necesidades y preferencias en lo que respecta a la gestión de tareas. Estas segmentaciones incluyen:
+1. Estudiantes de Secundaria: este grupo de usuarios tiende a estar más enfocado en tareas individuales y asignaciones escolares. Valoraron especialmente la capacidad de establecer fechas límite claras y recibir recordatorios para evitar la procrastinación.
+2. Estudiantes Universitarios: los estudiantes universitarios tienen una carga de trabajo más variada y compleja, que incluye proyectos de investigación, exámenes y trabajos grupales. Para este grupo, la capacidad de organizar proyectos más grandes en tareas más pequeñas y colaborar con compañeros de clase es esencial.
+3. Estudiantes Postgraduados: este segmento de usuarios a menudo está más orientado hacia la investigación y proyectos a largo plazo. Valoraron la capacidad de establecer metas a largo plazo y desglosarlas en tareas más pequeñas, así como la integración con herramientas de gestión de referencias bibliográficas.
+   
+Al comprender las necesidades específicas de cada segmento de usuarios, podemos diseñar una aplicación que se adapte mejor a sus requisitos individuales y ofrezca una experiencia más personalizada y satisfactoria para cada grupo.Nuestro objetivo es que el sistema de gestión de tareas está diseñado para mejorar la organización y la productividad de los usuarios en el ámbito educativo, brindándoles una herramienta eficaz y fácil de usar para gestionar sus responsabilidades académicas.
+
+**Estructura del Diseño**
+
+-Datos de Entrada:
+Para agregar una tarea en una categoría:
+Descripción de la tarea.
+Categoría a la que pertenece la tarea (opción de crear una nueva categoría si no existe).
+Para marcar una tarea como completa:
+ID de la tarea que se desea marcar como completa.
+Para modificar el estado de una tarea:
+ID de la tarea que se desea modificar.
+Nuevo estado de la tarea (pendiente, completa u observada).
+Para listar las tareas:
+Opción para filtrar por categoría (opcional).
+Para listar las categorías:
+No requiere datos de entrada adicionales.
+Proceso:
+Agregar una Tarea en una Categoría:
+Verificar si la categoría especificada existe.
+Si la categoría no existe, ofrecer la opción de crearla.
+Crear una nueva tarea con la descripción y categoría proporcionadas.
+Agregar la tarea a la lista de tareas.
+Marcar como Completa la Tarea:
+Buscar la tarea por su ID.
+Cambiar el estado de la tarea a "completa".
+Modificar el Estado de la Tarea:
+Buscar la tarea por su ID.
+Actualizar el estado de la tarea al nuevo estado especificado.
+Listar las Tareas:
+Mostrar todas las tareas almacenadas.
+Opcionalmente, filtrar las tareas por categoría si se especifica.
+Lista de Categorías:
+Mostrar todas las categorías disponibles almacenadas en la lista.
+Salida:
+Confirmaciones de acciones realizadas con éxito (por ejemplo, tarea agregada, tarea marcada como completa, etc.).
+Listados de tareas y categorías según las solicitudes del usuario.
+Mensajes de error en caso de que ocurran problemas durante el proceso.
+
+
+
+
 # MODULARIZACIÓN - Aplicación EduTarea
 
 **Descripción general**
