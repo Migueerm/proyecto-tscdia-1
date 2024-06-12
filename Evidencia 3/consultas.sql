@@ -1,11 +1,11 @@
 ##Inserto datos en la tabla estudiantes (id,nombre_apellido,fecha_nacimiento,edad,correo,telefono)
-INSERT INTO estudiante VALUES ('001','Juan Perez','10/09/2000','23','example@example.com','12345678901');
-INSERT INTO estudiante VALUES ('002','Martin Sanzhes','06/10/2002','22','example12@example.com','12945908901');
-INSERT INTO estudiante VALUES ('003','Pedro Perez','03/12/2005','19','example13@example.com','12985677831');
-INSERT INTO estudiante VALUES ('004','Ana López','15/05/1998','26','ana@example.com','19876543210');
-INSERT INTO estudiante VALUES ('005','María Rodríguez','20/07/2001','21','maria@example.com','18765432109');
-INSERT INTO estudiante VALUES ('006','Luis González','02/03/1999','23','luis@example.com','17654321098');
-INSERT INTO estudiante VALUES ('007','Carla Fernández','12/11/2003','18','carla@example.com','16543210987');
+INSERT INTO estudiante VALUES ('001','Juan Perez','2000/09/10','23','example@example.com','12345678901');
+INSERT INTO estudiante VALUES ('002','Martin Sanzhes','2002/10/03','22','example12@example.com','12945908901');
+INSERT INTO estudiante VALUES ('003','Pedro Perez','2005/03/12','19','example13@example.com','12985677831');
+INSERT INTO estudiante VALUES ('004','Ana López','1998/01/05','26','ana@example.com','19876543210');
+INSERT INTO estudiante VALUES ('005','María Rodríguez','2001/20/07','21','maria@example.com','18765432109');
+INSERT INTO estudiante VALUES ('006','Luis González','1999/02/03','23','luis@example.com','17654321098');
+INSERT INTO estudiante VALUES ('007','Carla Fernández','2003/12/11','18','carla@example.com','16543210987');
 
 ##Inserto datos en la tabla inscripcion (id_estudiante,id_curso,fecha_inscripcion,nota_final)
 INSERT INTO inscripcion VALUES ('001','11','01/03/2021','8');
