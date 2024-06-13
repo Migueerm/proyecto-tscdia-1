@@ -45,7 +45,7 @@ EduTarea SRL, especialistas en aplicaciones móviles de gestión de tareas, se d
 - Personalización de temas y colores para una experiencia de usuario más agradable.
 
 
-**2.Análisis y diseño**
+**2.Análisis y Diseño**
 **Análisis de Requisitos del Usuario:**
 -Investigación de Usuarios:
 Para comprender las necesidades y preferencias de los estudiantes en cuanto a la gestión de tareas, llevamos a cabo una exhaustiva investigación que incluyó encuestas, entrevistas y análisis de mercado. A través de estas actividades, pudimos obtener información valiosa sobre los comportamientos y hábitos de los estudiantes en relación con la gestión de sus tareas académicas.
