@@ -264,7 +264,7 @@ no_hay_tareas(): Esta funcion indica que no hay tareas para mostrar.
 
 
 
-**Wiki**
+###**Wiki**
 
 La Wiki de nuestro repositorio proporciona información detallada y respuestas a preguntas clave relacionadas con los aspectos legales y éticos del proyecto EduTareas SRL. A continuación, se ofrece una breve descripción de las temáticas que encontrarán en la Wiki:
 1. **Conformación legal del grupo:** descripción de cómo el grupo se constituye como una entidad legal, incluyendo la estructura de la empresa, los socios, el CEO y los empleados. Detalles sobre los contratos que se establecerán y las cláusulas principales de dichos contratos.
