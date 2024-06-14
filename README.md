@@ -612,3 +612,17 @@ La Wiki de nuestro repositorio proporciona información detallada y respuestas a
 10. **Seguridad y protección de datos:** implementación de medidas de seguridad según la Ley de Protección de Datos Personales.
 11. **Denuncia por divulgación de datos personales:** legislación a la que un usuario puede recurrir en caso de denunciar a la empresa por divulgación de sus datos personales y cómo la empresa puede respaldarse jurídicamente.
 Estas temáticas están diseñadas para proporcionar una guía completa y detallada sobre los aspectos legales y éticos que deben considerarse al utilizar y gestionar el sistema EduTareas SRL. La Wiki actúa como un recurso fundamental para garantizar el cumplimiento de todas las regulaciones pertinentes y para asegurar que las operaciones del grupo se lleven a cabo de manera legal y ética.
+
+**Rquisistos, instalación y base de datos**
+
+En primer lugar, si una persona desea hacer uso de la aplicación deberá asegurarse de tener instalado: Python, MySQL workbench y preferentemente un IDE como Visual Studio Code.
+Una vez instalado esos programas deberá instalar en el IDE la biblioteca de Python “mysql-connector-python” desde una nueva terminal. Nos permite conectar Python a nuestra base de datos de MySQL.
+Para utilizar nuestra aplicación, la persona deberá clonar nuestro repositorio “ proyecto-tscdia-1” o descargarlo ya que contiene el código de EduTareas, deberá importar la base de datos y luego en el IDE importar “mysql-connecor-python” y configurarlo de la siguiente manera para conectarse a nuestra base de datos:
+import mysql.connector config = { 'user': 'root, o el nombre de usuario configurado',
+ 'password': 'contraseña del usuario',
+'host': '127.0.0.1',
+'port': 3306,
+'database': 'edutareas'
+Y finalmente necesitará ejecutar nuestro código principal.
+ 
+
