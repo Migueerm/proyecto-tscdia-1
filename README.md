@@ -257,3 +257,25 @@ tarea_actualizada(id_tarea, nuevo_estado): Esta funcion indica que el estado de 
 tarea_listada(id_tarea, descripcion, estado, categoria): Esta funcion indica la descripción de la tarea listada, recuperando el ID, Descripción, Estado y Categoría
 no_hay_categorias(): Esta funcion indica que no hay categorías para mostrar.
 no_hay_tareas(): Esta funcion indica que no hay tareas para mostrar.
+
+
+
+
+
+
+
+**Wiki**
+
+La Wiki de nuestro repositorio proporciona información detallada y respuestas a preguntas clave relacionadas con los aspectos legales y éticos del proyecto EduTareas SRL. A continuación, se ofrece una breve descripción de las temáticas que encontrarán en la Wiki:
+1. **Conformación legal del grupo:** descripción de cómo el grupo se constituye como una entidad legal, incluyendo la estructura de la empresa, los socios, el CEO y los empleados. Detalles sobre los contratos que se establecerán y las cláusulas principales de dichos contratos.
+2. **Matriculación Profesional:** identificación de las personas que deben matricularse a nivel provincial para ejercer la profesión.Consecuencias legales a nivel provincial para los miembros del grupo que no completen el trámite de matriculación.
+3. **Divulgación de datos internos:** procedimientos legales que deben seguirse si un integrante del grupo divulga datos de la base de datos interna.
+4. **Reutilización del código para fines personales:** acciones legales que deben tomarse si un integrante del grupo reutiliza el código para fines personales, según la Legislación de la Provincia de Córdoba y el Código Penal Argentino. Medidas a seguir en caso de reutilización del código a nivel internacional.
+5. **Adulteración de la Base de Datos:** instrumentos legales que respaldan a la empresa si la base de datos es adulterada externamente a nivel nacional. procedimientos legales y respaldo si la base de datos es adulterada a nivel internacional.
+6. **Negligencia de los Programadores:** instrumentos legales a los que se acude en caso de negligencia por parte de los programadores y la persona responsable de hacerlo.
+7. **Reemplazo del sistema por otro proveedor:** directrices éticas para actuar ante el cliente y los colegas si el cliente decide reemplazar el sistema por otro proveedor.
+8. **Registro Nacional de Software:** pasos necesarios para que el programa sea parte del Registro Nacional de Software.
+9. **Replicación del código:** cómo la Ley de Propiedad Intelectual puede proteger al software si el código es replicado.
+10. **Seguridad y protección de datos:** implementación de medidas de seguridad según la Ley de Protección de Datos Personales.
+11. **Denuncia por divulgación de datos personales:** legislación a la que un usuario puede recurrir en caso de denunciar a la empresa por divulgación de sus datos personales y cómo la empresa puede respaldarse jurídicamente.
+Estas temáticas están diseñadas para proporcionar una guía completa y detallada sobre los aspectos legales y éticos que deben considerarse al utilizar y gestionar el sistema EduTareas SRL. La Wiki actúa como un recurso fundamental para garantizar el cumplimiento de todas las regulaciones pertinentes y para asegurar que las operaciones del grupo se lleven a cabo de manera legal y ética.
