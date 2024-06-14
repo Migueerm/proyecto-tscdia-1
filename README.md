@@ -259,7 +259,7 @@ no_hay_categorias(): Esta funcion indica que no hay categorías para mostrar.
 no_hay_tareas(): Esta funcion indica que no hay tareas para mostrar.
 
 
-****Guía del contenido de nuestro repositorio GitHub**
+**Guía del contenido de nuestro repositorio GitHub**
 
 **Readme**
 
