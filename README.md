@@ -8,7 +8,7 @@
 | Florencia Andrada   | 44788525  | florenciacarolina031@gmail.com | https://github.com/Flor3ncia-Andr4d4
 | Carlota Olmedo      | 41711170  | carlota_olmedo@hotmail.com| https://github.com/caolmedo
 | Guadalupe Mendoza   | 45934026  | despontinguadalupe@gmail.com |https://github.com/Guadamendoza/SolucionesPracticas 
-| Guadalupe Barrozo   | 40203672  | gbarrozosanchez@gmail.com | https://github.com/Guadalupe-S
+
 
 **Objetivo del Proyecto**
 
@@ -571,6 +571,28 @@ Imprime un mensaje de error si ocurre algún problema durante la ejecución de l
 Realiza una consulta que combina datos de la tabla estudiante y estudiante_compartir usando INNER JOIN.
 Imprime los resultados en formato de tabla utilizando tabulate.
 Imprime un mensaje de error si ocurre algún problema durante la ejecución de la consulta.
+
+
+ **Aplicación Python:** Se encuentran todos los archivos.py de nuestra aplicación. GUADA
+Archivo index.py: 
+Código fuente de EduTareas. Está compuesto por varios módulos y funciones que se encargan de realizar distintas operaciones relacionadas con las tareas. Dentro de él podemos encontrar la inicialización de las variables y las funciones, la llamada a dichas variables y funciones, el proceso y finalmente la salida de la información.  
+Modulo_Educategorias.py: 
+En este archivo se definen las funciones específicas para gestionar categorías dentro de la aplicación. Sirve para:
+-Ingreso a una nueva categoría.
+-Listado de todas las categorías existentes.
+-Modificación de una categoría existente.
+-Eliminación de una categoría.
+-Salida de la gestión de categorías.
+Modulo_Edutarea.py:
+En este archivo se definen funciones específicas para gestionar tareas dentro de la aplicación. Sirve para: 
+-Ingreso de una nueva tarea.
+-Listado de todas las tareas existentes.
+-Modificación de una tarea existente.
+-Eliminación de una tarea.
+-Marcado de una tarea como completa.
+
+
+
 
 
 
