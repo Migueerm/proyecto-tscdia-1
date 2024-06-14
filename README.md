@@ -299,9 +299,270 @@ Ingresa el nombre actual de la categoría que deseas modifica
 Proporciona el nuevo nombre para la categoría
 La categoría se actualizará con el nuevo nombre y recibirás una confirmación.
 
+### Base de datos
 
+Dentro de esta carpeta, hemos incluido varios archivos esenciales para comprender y trabajar con nuestra base de datos. Primero, tenemos un archivo SQL que contiene la estructura completa de la base de datos, detallando todas las tablas, columnas, y relaciones necesarias. Luego, encontrarán otro archivo con las inserciones de datos, que les permitirá poblar la base de datos con información de prueba. Además, hemos agregado un archivo con diversas consultas SQL que pueden ser útiles para analizar y extraer datos de la base de datos de EduTareas.
+- **Archivos Crud:** Cada tabla de la base de datos tiene su propio archivo Python dedicado a las operaciones CRUD (Crear,Leer, Actualizar y Eliminar). A su vez cada uno de estos archivos incluye menús interactivos para facilitar la gestión de datos. 
+- **Archivo de consultas INNER JOIN:** un archivo específico que contiene consultas complejas utilizando INNER JOIN para extraer datos relacionados entre diferentes tablas de nuestra base de datos.
+Para facilitar aún más la comprensión de la estructura de nuestra base de datos, también hemos incluido dos diagramas: el diagrama Crow’s Foot y el diagrama entidad-relación. Estos diagramas proporcionan una representación visual de las tablas y las relaciones entre ellas, haciendo que sea más fácil entender cómo se organiza y se conecta toda la información.
 
+A continuacion una explicacion del funcionamiento de los archivos.py CRUD e INNER JOIN: 
+Archivos CRUD: 
+**CRUD_tarea.py:**
+- def obtener_conexion (): 
+Establece la conexión con la base de datos
+Imprime un mensaje si la conexión es exitosa.
+- def crear_tabla():
+inserta una nueva tarea en la tabla ‘tarea’
+Si se genero correctamente imprime un mensaje exitoso (“tarea creada correctamente”)
+- def leer_tareas():
+Recupera todas las tareas de la tabla tarea y las imprime.
+Si no se encuentran tareas, imprime un mensaje indicando esto,(“no se econtraron tareas”)
+ def actualizar tarea():
+Actualiza los detalles de una tarea específica identificada por ID_Tarea.
+Si falta algún dato esencial, imprime un mensaje de error.
+Imprime un mensaje confirmando la actualización de la tarea.
+- def borrar_tarea():
+Elimina una tarea específica de la tabla tarea identificada por ID_Tarea.
+Si no se proporciona un ID_Tarea, imprime un mensaje de error.
+Confirma la transacción y cierra la conexión.
+Imprime un mensaje confirmando la eliminación de la tarea (tarea,(ID_tarea) eliminada correctamente)
+- def mostrar_menu():
+Muestra las opciones disponibles para gestionar las tareas (crear, leer, actualizar, borrar, salir).
+- def ejecutar_opcion_tareas ():
+Dependiendo de la opción seleccionada por el usuario, llama a la función correspondiente para crear, leer, actualizar o borrar una tarea.
+Solicita al usuario los datos necesarios para realizar la operación.
+Maneja la opción de salir del programa.
 
+**CRUD_recordatorio.py:**
+def obtener_conexion(): 
+Establece la conexión con la base de datos Imprime un mensaje si la conexión es exitosa.
+- def crear_recordatorio():
+Inserta un nuevo recordatorio en la tabla recordatorio con los siguientes detalles (Mensaje, Fecha, Hora, Descripcion, ID_Tarea).
+Imprime un mensaje confirmando la creación del recordatorio. (“recordatorio creado correctamente”)
+- def leer_recordatorio():
+Recupera todos los recordatorios de la tabla recordatorio y los imprime.
+Si no se encuentran recordatorios, imprime un mensaje indicando esto (“no se encontraron recordatorios”)
+- def actualizar_recordatorio():
+Actualiza los detalles de un recordatorio específico identificado por ID_Recordatorio.
+Si falta algún dato esencial, imprime un mensaje de error.
+Imprime un mensaje confirmando la actualización del recordatorio.
+- def Borrar_Recordatorio():
+Elimina un recordatorio específico de la tabla recordatorio identificado por ID_Recordatorio.
+Imprime un mensaje confirmando la eliminación del recordatorio.
+- def mostrar_menu(): 
+Muestra las opciones disponibles para gestionar los recordatorios (crear, leer, actualizar, borrar, salir).
+- def ejecutar_opcion_recordatorios(): 
+Dependiendo de la opción seleccionada por el usuario, llama a la función correspondiente para crear, leer, actualizar o borrar un recordatorio.
+Solicita al usuario los datos necesarios para realizar la operación.
+Maneja la opción de salir del programa.
+
+**CRUD_profesor.py:**
+- def obtener_conexion(): 
+Establece la conexión con la base de datos
+Imprime un mensaje si la conexión es exitosa.
+- def crear_profesor()
+Inserta un nuevo profesor en la tabla profesor con los detalles (ID_Profesor, Nombre_Apellido, Correo_electronico).
+Imprime un mensaje confirmando la creación del profesor.(“profesor(ID_profesor) creado correctamente”)
+- def leer_Profesores()
+Recupera todos los registros de profesores de la tabla profesor y los imprime.
+Si no se encuentran registros, imprime un mensaje indicando esto.
+- def Actualizar_profesor(): 
+Actualiza los detalles de un profesor específico identificado por ID_Profesor.
+Si falta algún dato esencial, imprime un mensaje de error.
+Imprime un mensaje confirmando la actualización del profesor.
+- def borrar_profesor()
+Elimina un registro de profesor específico de la tabla profesor identificado por ID_Profesor.
+Imprime un mensaje confirmando la eliminación del profesor
+- def mostrar_menu_profesores(): 
+Muestra las opciones disponibles para gestionar los registros de profesores (crear, leer, actualizar, borrar, salir).
+- def ejecutar_opcion_profesores()
+Dependiendo de la opción seleccionada por el usuario, llama a la función correspondiente para crear, leer, actualizar o borrar un registro de profesor.
+Solicita al usuario los datos necesarios para realizar la operación.
+Maneja la opción de salir del programa.
+
+**CRUD_materia.py**
+Lista de Días Válidos:
+Se define una lista DIAS_VALIDOS que contiene los nombres de los días de la semana (lunes,martes, miercoles, jueves, viernes) utilizados para validar los días ingresados al crear o actualizar una materia.
+- def obtener_conexion(): 
+Establece la conexión con la base de datos
+Imprime un mensaje si la conexión es exitosa.
+- def crear_materia():
+Valida que el día ingresado esté en la lista de días válidos.
+Inserta una nueva materia en la tabla materia con los detalles (Nombre, ID_Profesor, Ubicacion, Dias, Horario).
+Imprime "Materia creada correctamente".
+- def leer_materias():
+Recupera todos los registros de materias de la tabla materia y los imprime.
+Si no se encuentran registros, imprime "No se encontraron materias".
+Cierra la conexión e imprime "Lectura de materias realizada correctamente".
+- def actualizar_materia():
+Verifica que el ID_Materia esté presente y que los días ingresados sean válidos.
+Construye una lista de valores a actualizar y verifica que al menos un campo adicional a ID_Materia se vaya a actualizar.
+Construye y ejecuta la consulta SQL de actualización.
+Imprime ("Materia actualizada correctamente".)
+- def borrar_materia():
+Elimina un registro de materia específico de la tabla materia identificado por ID_Materia.
+Imprime "Materia borrada correctamente".
+- def mostrar_menu_materias():
+Muestra las opciones disponibles para gestionar los registros de materias (crear, leer, actualizar, borrar, salir).
+- ejecutar_opcion_materias():
+Dependiendo de la opción seleccionada por el usuario, llama a la función correspondiente para crear, leer, actualizar o borrar un registro de materia.
+Solicita al usuario los datos necesarios para realizar la operación.
+Maneja la opción de salir del programa.
+
+**CRUD_inscripciones.py**
+- def obtener_conexion(): 
+Establece la conexión con la base de datos
+Imprime un mensaje si la conexión es exitosa.
+- def crear_inscripcion():
+Inserta una nueva inscripción en la tabla inscripcion con los detalles (ID_Estudiante, ID_Curso, Fecha_Inscripcion, Nota_Final).
+Imprime "Inscripción creada correctamente".
+- def leer_inscripciones():
+Recupera todos los registros de inscripciones de la tabla inscripcion y los imprime.
+Si no se encuentran registros, imprime "No se encontraron inscripciones".
+Cierra la conexión e imprime "Lectura de inscripciones realizada correctamente".
+- actualizar_inscripcion():
+Verifica que todos los campos estén presentes (ID_Estudiante, ID_Curso, Fecha_Inscripcion, Nota_Final).
+Construye y ejecuta la consulta SQL de actualización.
+Imprime "Inscripción actualizada correctamente".
+- borrar_inscripcion():
+Elimina un registro de inscripción específico de la tabla inscripcion identificado por ID_Estudiante y ID_Curso.
+Imprime "Inscripción borrada correctamente".
+- def mostrar_menu_inscripciones():
+Muestra las opciones disponibles para gestionar los registros de inscripciones (crear, leer, actualizar, borrar, salir).
+- def ejecutar_opcion_inscripciones():
+Dependiendo de la opción seleccionada por el usuario, llama a la función correspondiente para crear, leer, actualizar o borrar un registro de inscripción.
+Solicita al usuario los datos necesarios para realizar la operación.
+Maneja la opción de salir del programa.
+
+**CRUD_evento.py**
+- def obtener_conexion(): 
+Establece la conexión con la base de datos
+Imprime un mensaje si la conexión es exitosa.
+- def crear_evento():
+Inserta un nuevo evento en la tabla evento con los detalles proporcionados (ID_Evento, Fecha, ID_Calendario).
+Imprime "Evento creado correctamente".
+- def leer_eventos():
+Recupera todos los registros de eventos de la tabla evento y los imprime.
+Si no se encuentran registros, imprime "No se encontraron eventos".
+Cierra la conexión e imprime "Lectura de eventos realizada correctamente".
+- def actualizar_evento():
+Verifica que todos los campos estén presentes (ID_Evento, Fecha, ID_Calendario).
+Construye y ejecuta la consulta SQL de actualización.
+Imprime "Evento actualizado correctamente".
+- def borrar_evento():
+Elimina un registro de evento específico de la tabla evento identificado por ID_Evento.
+Imprime "Evento borrado correctamente".
+Menú Interactivo:
+- def mostrar_menu_eventos():
+Muestra las opciones disponibles para gestionar los registros de eventos (crear, leer, actualizar, borrar, salir).
+- def ejecutar_opcion_eventos():
+Dependiendo de la opción seleccionada por el usuario, llama a la función correspondiente para crear, leer, actualizar o borrar un registro de evento.
+Solicita al usuario los datos necesarios para realizar la operación.
+Maneja la opción de salir del programa.
+
+**CRUD_estudiante.py**
+- def obtener_conexion(): 
+Establece la conexión con la base de datos
+Imprime un mensaje si la conexión es exitosa.
+- def crear_estudiante():
+Inserta un nuevo registro de estudiante en la tabla estudiante con los detalles (id_estudiante, nombre_apellido, fecha_nacimiento, edad, correo_electronico, telefono).
+- def leer_estudiantes():
+Recupera todos los registros de estudiantes de la tabla estudiante y los imprime.
+Si no se encuentran registros, imprime "No se encontraron estudiantes”.
+- def actualizar_estudiante):
+Verifica que todos los campos estén presentes (ID_Estudiante, Nombre_Apellido, Fecha_nacimiento, Edad, Correo_electronico, Telefono).
+ejecuta la actualizacion. 
+- def borrar_estudiante():
+Elimina un registro de estudiante específico de la tabla estudiante identificado por ID_Estudiante.
+- def mostrar_menu_estudiantes):
+Muestra las opciones disponibles para gestionar los registros de estudiantes (crear, leer, actualizar, borrar, salir).
+def ejecutar_opcion_estudiantes):
+Dependiendo de la opción seleccionada por el usuario, llama a la función correspondiente para crear, leer, actualizar o borrar un registro de estudiante.
+Solicita al usuario los datos necesarios para realizar la operación.
+Maneja la opción de salir del programa.
+
+**CRUD_curso_profesor_py**
+- def obtener_conexion(): 
+Establece la conexión con la base de datos
+Imprime un mensaje si la conexión es exitosa.
+- def crear_curso_profesor(): 
+Inserta un nuevo registro de curso asignado a un profesor en la tabla curso_profesor con los detalles(ID_Curso, ID_Profesor, Año_academico, Semestre).
+Imprime "Curso de profesor creado correctamente".
+- def leer_cursos_profesor():
+Recupera todos los registros de cursos asignados a profesores de la tabla curso_profesor y los imprime.
+Si no se encuentran registros, imprime "No se encontraron cursos de profesor".
+Cierra la conexión y confirma la lectura exitosa.
+- def actualizar_curso_profesor ():
+Verifica que todos los campos estén presentes (ID_Curso, ID_Profesor, Año_academico, Semestre).
+ejecuta la actualizacion
+Imprime "Curso de profesor actualizado correctamente".
+- def borrar_curso_profesor):
+Elimina un registro de curso asignado a un profesor específico de la tabla curso_profesor identificado por ID_Curso.
+Imprime "Curso de profesor borrado correctamente".
+- Menú Interactivo:
+- def mostrar_menu_cursos_profesor ():
+Muestra las opciones disponibles para gestionar los registros de cursos asignados a profesores (crear, leer, actualizar, borrar, salir).
+def ejecutar_opcion_cursos_profesor():llama a la función correspondiente para crear, leer, actualizar o borrar un registro de curso asignado a un profesor.
+Solicita al usuario los datos necesarios para realizar la operación.
+Maneja la opción de salir del programa.
+
+**CRUD_curso.py:**
+- def obtener_conexion(): 
+Establece la conexión con la base de datos
+Imprime un mensaje si la conexión es exitosa.
+- Función crear_curso()
+con los siguientes detalles (ID_Curso, Nombre_Curso, Descripcion_Curso) Inserta un nuevo curso en la tabla curso de la base de datos.
+Imprime "Curso creado correctamente" después de que la operación de inserción haya sido exitosa.
+- def leer_cursos():
+Recupera todos los cursos existentes desde la tabla curso y los imprime.
+Si no se encuentran cursos en la tabla, imprime "No se encontraron cursos."
+Después de imprimir los cursos (si hay), imprime "Lectura de cursos realizada correctamente".
+- def actualizar_curso
+Actualiza los datos de un curso (ID_Curso, Nombre_Curso=None, Descripcion_Curso=None):
+específico en la tabla curso con los siguientes detalles
+Imprime "Curso actualizado correctamente" después de que la operación de actualización haya sido exitosa.
+- Función borrar_curso(ID_Curso):
+Elimina un curso específico de la tabla curso.
+Imprime "Curso borrado correctamente" después de que la operación de eliminación haya sido exitosa.
+
+**CRUD_calendario.py:**
+- def crear_calendario
+Inserta un nuevo registro de calendario en la tabla calendario con los siguientes detalles(ID_Calendario, Tipo, Fecha, ID_Profesor) .
+Imprime "Calendario creado correctamente" después de que la operación de inserción haya sido exitosa.
+- Función leer_calendarios():
+Recupera todos los registros de calendarios desde la tabla calendario.
+Imprime cada calendario encontrado o imprime "No se encontraron calendarios" si la tabla está vacía.
+Después de imprimir los calendarios (si hay), imprime "Lectura de calendarios realizada correctamente".
+- def actualizar_calendario()
+Actualiza los datos de un calendario específico en la tabla calendario.
+Verifica que los campos requeridos (ID_Calendario, Tipo y Fecha) estén presentes antes de ejecutar la actualización.
+Imprime "Calendario actualizado correctamente" después de que la operación de actualización haya sido exitosa.
+- def borrar_calendario()
+Elimina un calendario específico de la tabla calendario basado en el ID_Calendario proporcionado.
+Imprime "Calendario borrado correctamente" después de que la operación de eliminación haya sido exitosa.
+
+**Consultas_join.py**
+- Función leer_datos_con_join_inscripcion_estudiante():
+Realiza una consulta que combina datos de la tabla inscripcion y estudiante usando INNER JOIN.
+Imprime los resultados en formato de tabla utilizando tabulate.
+Imprime un mensaje de error si ocurre algún problema durante la ejecución de la consulta.
+- Función leer_datos_con_join_inscripcion_cursos():
+Realiza una consulta que combina datos de la tabla inscripcion y curso usando INNER JOIN.
+Imprime los resultados en formato de tabla utilizando tabulate.
+Imprime un mensaje de error si ocurre algún problema durante la ejecución de la consulta.
+- Función leer_datos_con_join_nombre_profesor():
+Realiza una consulta que combina datos de la tabla curso_profesor y profesor usando INNER JOIN.
+Imprime los resultados en formato de tabla utilizando tabulate.
+Imprime un mensaje de error si ocurre algún problema durante la ejecución de la consulta.
+- Función leer_datos_con_join_materias_con_tareas():
+Realiza una consulta que combina datos de la tabla tarea_materia y tarea usando INNER JOIN.
+Imprime los resultados en formato de tabla utilizando tabulate.
+Imprime un mensaje de error si ocurre algún problema durante la ejecución de la consulta.
+- Función leer_datos_con_join_mails():
+Realiza una consulta que combina datos de la tabla estudiante y estudiante_compartir usando INNER JOIN.
+Imprime los resultados en formato de tabla utilizando tabulate.
+Imprime un mensaje de error si ocurre algún problema durante la ejecución de la consulta.
 
 
 
