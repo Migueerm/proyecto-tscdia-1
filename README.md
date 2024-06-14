@@ -259,39 +259,47 @@ no_hay_categorias(): Esta funcion indica que no hay categorías para mostrar.
 no_hay_tareas(): Esta funcion indica que no hay tareas para mostrar.
 
 
-****Guía del contenido de nuestro repositorio GitHub 
-Readme
-En nuestro archivo readme, se describen los integrantes del grupo, presentación y objetivo del proyecto y la explicación de la modularización de nuestra aplicación.**
+****Guía del contenido de nuestro repositorio GitHub**
+
+**Readme**
+
+**En nuestro archivo readme, se describen los integrantes del grupo, presentación y objetivo del proyecto y la explicación de la modularización de nuestra aplicación.**
 
 
- # 1 USO DE LA APLICACIÓN  
+  1 USO DE LA APLICACIÓN  
 Para ingresar una nueva tarea, el usuario sigue estos pasos:
 Selecciona la opción 1 del menú principal.
 Ingresa la categoría de la tarea requerida.
 En caso de que la categoría no exista previamente, se ofrece la opción de crearla.
 Luego, proporciona una descripción detallada de la tarea.
 Se registra la tarea en el sistema con un ID único, la descripción proporcionada, el estado inicial "pendiente", y la categoría seleccionada.
+
 Listar Tareas:
 Para listar todas las tareas registradas, sigue estos pasos:
+
 Selecciona la opción 2 del menú principal.
 El programa muestra todas las tareas en la lista, incluyendo detalles como su ID, descripción, estado y categoría.
 Antes de mostrar las tareas, verifica si la lista está vacía. En caso afirmativo, se muestra un mensaje indicando que no hay tareas para mostrar.
+
 Modificar Estado de Tarea:
 Para actualizar el estado de una tarea existente, realiza lo siguiente:
 Selecciona la opción 3 del menú principal.
 Ingresa el ID de la tarea que desea modificar.
 Una vez encontrada la tarea, se presentan opciones para cambiar su estado a "Pendiente", "Realizada" o "Observada", según la preferencia del usuario.
 El estado de la tarea se actualiza inmediatamente después de la selección.
+
 Ingresar Categoría:
 Para ingresar una nueva categoría el usuario debe hacer lo siguiente: 
 Selecciona la opción 5 del menú principal. 
 Ingresa el nombre de la categoría deseada.
 Si la categoría no existe previamente, se añade al sistema
+
 Listar categorias: 
 Para ver todas las categorías existentes seguir los siguientes pasos: 
 Selecciona la opción 6 del menú.
 Se mostrará un listado con todas las categorías registradas en el sistema.
 Si no hay categorías registradas, se mostrará un mensaje indicando que no hay categorías para mostrar.
+
 Modificar categoría:
 Para cambiar el nombre de una categoria existente
 Selecciona la opción 7 del menú principal.
