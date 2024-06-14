@@ -576,6 +576,7 @@ Imprime un mensaje de error si ocurre algún problema durante la ejecución de l
  **Aplicación Python:** Se encuentran todos los archivos.py de nuestra aplicación. GUADA
 Archivo index.py: 
 Código fuente de EduTareas. Está compuesto por varios módulos y funciones que se encargan de realizar distintas operaciones relacionadas con las tareas. Dentro de él podemos encontrar la inicialización de las variables y las funciones, la llamada a dichas variables y funciones, el proceso y finalmente la salida de la información.  
+
 Modulo_Educategorias.py: 
 En este archivo se definen las funciones específicas para gestionar categorías dentro de la aplicación. Sirve para:
 -Ingreso a una nueva categoría.
@@ -583,6 +584,7 @@ En este archivo se definen las funciones específicas para gestionar categorías
 -Modificación de una categoría existente.
 -Eliminación de una categoría.
 -Salida de la gestión de categorías.
+
 Modulo_Edutarea.py:
 En este archivo se definen funciones específicas para gestionar tareas dentro de la aplicación. Sirve para: 
 -Ingreso de una nueva tarea.
