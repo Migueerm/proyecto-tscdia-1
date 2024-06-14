@@ -1,4 +1,11 @@
 # EduTarea SRL
+
+## **Link a video introductorio EduTareal SRL en alta calidad:** 
+
+https://drive.google.com/file/d/1dfZvsZ9JEL9ziK16UcsDLuNcrrlq6f-K/view?usp=drive_link
+
+
+
 **Integrantes**
 
 | Nombre y  Apellido  |    DNI    | Correo eléctronico        | Link Git Hub |
