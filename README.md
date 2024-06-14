@@ -235,38 +235,41 @@ Esta función lista todas las tareas almacenadas en `lista_tareas` con sus detal
 
 
 
-**modulo_3.py** 
+### **modulo_3.py** 
+
 Esta parte del código define distintas funciones de salida de acuerdo a las acciones que se realicen previamente, de acuerdo a las selecciones realizadas en los módulos 1 y 2. 
 
-Descripción de la salida de cada función:
-bienvenida(): Esta funcion realiza un mensaje de bienvenida. 
-menu(): Esta funcion indica la ejecución del menú, recuperando las distintas opciones.
-opcion_invalida(): Esta funcion indica que la opción es inválida
-salir_programa(): Esta funcion indica que se está saliendo del programa
-operacion_cancelada(): Esta funcion indica que la operación fue cancelada.
-error_inesperado(error): Esta funcion indica que hubo un error inesperado. 
-categoria_anadida(nombre_categoria): Esta funcion indica que se añadió una categoría
-categoria_ya_existe(nombre_categoria):Esta funcion indica que la categoría ingresada ya existe.
-categoria_modificada(nombre_original, nuevo_nombre): Esta función indica que se modificó un nombre de una categoría.
-categoria_no_existe(nombre_categoria): Esta funcion indica que la categoría no existe. 
-categoria_eliminada(nombre_categoria): Esta funcion indica que se eliminó una categoría
-tarea_anadida(): Esta función indica que se agregó una tarea con éxito. 
-tarea_no_encontrada(id_tarea): Esta funcion indica que la tarea no ha sido encontrada.
-tarea_eliminada(id_tarea): Esta funcion indica que la tarea ha sido eliminada. 
-tarea_actualizada(id_tarea, nuevo_estado): Esta funcion indica que el estado de la tarea ha sido actualizado un nuevo estado, recuperando el ID y el Estado.
-tarea_listada(id_tarea, descripcion, estado, categoria): Esta funcion indica la descripción de la tarea listada, recuperando el ID, Descripción, Estado y Categoría
-no_hay_categorias(): Esta funcion indica que no hay categorías para mostrar.
-no_hay_tareas(): Esta funcion indica que no hay tareas para mostrar.
+*Descripción de la salida de cada función:*
+
+   - bienvenida(): Esta funcion realiza un mensaje de bienvenida. 
+   - menu(): Esta funcion indica la ejecución del menú, recuperando las distintas opciones.
+   - opcion_invalida(): Esta funcion indica que la opción es inválida
+   - salir_programa(): Esta funcion indica que se está saliendo del programa
+   - operacion_cancelada(): Esta funcion indica que la operación fue cancelada.
+   - error_inesperado(error): Esta funcion indica que hubo un error inesperado. 
+   - categoria_anadida(nombre_categoria): Esta funcion indica que se añadió una categoría
+   - categoria_ya_existe(nombre_categoria):Esta funcion indica que la categoría ingresada ya existe.
+   - categoria_modificada(nombre_original, nuevo_nombre): Esta función indica que se modificó un nombre de una categoría.
+   - categoria_no_existe(nombre_categoria): Esta funcion indica que la categoría no existe. 
+   - categoria_eliminada(nombre_categoria): Esta funcion indica que se eliminó una categoría
+   - tarea_anadida(): Esta función indica que se agregó una tarea con éxito. 
+   - tarea_no_encontrada(id_tarea): Esta funcion indica que la tarea no ha sido encontrada.
+   - tarea_eliminada(id_tarea): Esta funcion indica que la tarea ha sido eliminada. 
+   - tarea_actualizada(id_tarea, nuevo_estado): Esta funcion indica que el estado de la tarea ha sido actualizado un nuevo estado, recuperando el ID y el Estado.
+   - tarea_listada(id_tarea, descripcion, estado, categoria): Esta funcion indica la descripción de la tarea listada, recuperando el ID, Descripción, Estado y Categoría
+   - no_hay_categorias(): Esta funcion indica que no hay categorías para mostrar.
+   - no_hay_tareas(): Esta funcion indica que no hay tareas para mostrar.
 
 
-**Guía del contenido de nuestro repositorio GitHub**
 
-**Readme**
+# **Guía del contenido de nuestro repositorio GitHub**
 
-**En nuestro archivo readme, se describen los integrantes del grupo, presentación y objetivo del proyecto y la explicación de la modularización de nuestra aplicación.**
+#### **Readme:**
+
+En nuestro archivo readme, se describen los integrantes del grupo, presentación y objetivo del proyecto y la explicación de la modularización de nuestra aplicación.
 
 
-  1 USO DE LA APLICACIÓN  
+## 1. USO DE LA APLICACIÓN  
 Para ingresar una nueva tarea, el usuario sigue estos pasos:
 Selecciona la opción 1 del menú principal.
 Ingresa la categoría de la tarea requerida.
@@ -274,40 +277,76 @@ En caso de que la categoría no exista previamente, se ofrece la opción de crea
 Luego, proporciona una descripción detallada de la tarea.
 Se registra la tarea en el sistema con un ID único, la descripción proporcionada, el estado inicial "pendiente", y la categoría seleccionada.
 
-Listar Tareas:
+**Listar Tareas:**
 Para listar todas las tareas registradas, sigue estos pasos:
 
-Selecciona la opción 2 del menú principal.
+**Selecciona la opción 2 del menú principal.**
 El programa muestra todas las tareas en la lista, incluyendo detalles como su ID, descripción, estado y categoría.
 Antes de mostrar las tareas, verifica si la lista está vacía. En caso afirmativo, se muestra un mensaje indicando que no hay tareas para mostrar.
 
-Modificar Estado de Tarea:
+**Modificar Estado de Tarea:**
 Para actualizar el estado de una tarea existente, realiza lo siguiente:
 Selecciona la opción 3 del menú principal.
 Ingresa el ID de la tarea que desea modificar.
 Una vez encontrada la tarea, se presentan opciones para cambiar su estado a "Pendiente", "Realizada" o "Observada", según la preferencia del usuario.
 El estado de la tarea se actualiza inmediatamente después de la selección.
 
-Ingresar Categoría:
+**Ingresar Categoría:**
 Para ingresar una nueva categoría el usuario debe hacer lo siguiente: 
 Selecciona la opción 5 del menú principal. 
 Ingresa el nombre de la categoría deseada.
 Si la categoría no existe previamente, se añade al sistema
 
-Listar categorias: 
+**Listar categorias:**
 Para ver todas las categorías existentes seguir los siguientes pasos: 
 Selecciona la opción 6 del menú.
 Se mostrará un listado con todas las categorías registradas en el sistema.
 Si no hay categorías registradas, se mostrará un mensaje indicando que no hay categorías para mostrar.
 
-Modificar categoría:
+**Modificar categoría:**
 Para cambiar el nombre de una categoria existente
 Selecciona la opción 7 del menú principal.
 Ingresa el nombre actual de la categoría que deseas modifica
 Proporciona el nuevo nombre para la categoría
 La categoría se actualizará con el nuevo nombre y recibirás una confirmación.
 
-### Base de datos
+
+
+## 2. REPOSITORIO
+
+#### PROJECTS: 
+Para la sistematización de nuestras tareas, se configuró un GitHub Project. Dividimos nuestras tareas en dos grandes módulos, asociadas a dos milestones, cada uno con sus respectivos issues. Los mismos son: 
+
+**1. Implementación y gestión de datos:**
+
+*Se divide en varias cargas de trabajo que abarcan desde el diseño inicial del sistema hasta la implementación y análisis preliminar de datos.*
+
+- Diseñar la Estructura del Sistema
+- Recolección de Base de Datos
+- Codificación con Python
+- Declaración de funciones en Python
+- Detallar archivos .py
+- Configuración del entorno de desarrollo
+- Implementación del Sistema de Ingreso de Datos 
+- Validación y Verificación de Datos Ingresados
+- Almacenamiento y Gestión de Datos
+- Análisis Preliminar de Datos Ingresados 
+
+
+**2. Proceso y Salida de Datos**
+
+*Nos aseguramos de cubrir las etapas importantes del procesamiento de datos, generación de salidas, validación del código, y modularización. Incluye el procesamiento de los datos y la generación de informes y salidas de datos útiles, así como la verificación y modularización del código.*
+
+- Codificación del Proceso de Datos
+- Modularización del Código 
+- Desarrollo del Menú Principal
+- Generación de módulos de Procesos y Salidas 
+- Pruebas y Validación del Código
+- Integración de Base de Datos
+- Documentación del Código 
+- Revisión y Ajustes Finales
+
+## 3. BASE DE DATOS
 
 Dentro de esta carpeta, hemos incluido varios archivos esenciales para comprender y trabajar con nuestra base de datos. Primero, tenemos un archivo SQL que contiene la estructura completa de la base de datos, detallando todas las tablas, columnas, y relaciones necesarias. Luego, encontrarán otro archivo con las inserciones de datos, que les permitirá poblar la base de datos con información de prueba. Además, hemos agregado un archivo con diversas consultas SQL que pueden ser útiles para analizar y extraer datos de la base de datos de EduTareas.
 - **Archivos Crud:** Cada tabla de la base de datos tiene su propio archivo Python dedicado a las operaciones CRUD (Crear,Leer, Actualizar y Eliminar). A su vez cada uno de estos archivos incluye menús interactivos para facilitar la gestión de datos. 
@@ -573,11 +612,13 @@ Imprime los resultados en formato de tabla utilizando tabulate.
 Imprime un mensaje de error si ocurre algún problema durante la ejecución de la consulta.
 
 
- **Aplicación Python:** Se encuentran todos los archivos.py de nuestra aplicación. GUADA
-Archivo index.py: 
+## **4. APLICACIÓN** 
+**Se encuentran todos los archivos.py de nuestra aplicación.**
+
+- **Archivo index.py:**
 Código fuente de EduTareas. Está compuesto por varios módulos y funciones que se encargan de realizar distintas operaciones relacionadas con las tareas. Dentro de él podemos encontrar la inicialización de las variables y las funciones, la llamada a dichas variables y funciones, el proceso y finalmente la salida de la información.  
 
-Modulo_Educategorias.py: 
+- **Modulo_Educategorias.py:**
 En este archivo se definen las funciones específicas para gestionar categorías dentro de la aplicación. Sirve para:
 -Ingreso a una nueva categoría.
 -Listado de todas las categorías existentes.
@@ -585,7 +626,7 @@ En este archivo se definen las funciones específicas para gestionar categorías
 -Eliminación de una categoría.
 -Salida de la gestión de categorías.
 
-Modulo_Edutarea.py:
+- **Modulo_Edutarea.py:**
 En este archivo se definen funciones específicas para gestionar tareas dentro de la aplicación. Sirve para: 
 -Ingreso de una nueva tarea.
 -Listado de todas las tareas existentes.
@@ -594,12 +635,7 @@ En este archivo se definen funciones específicas para gestionar tareas dentro d
 -Marcado de una tarea como completa.
 
 
-
-
-
-
-
-### **Wiki**
+## **5. WIKI**
 
 La Wiki de nuestro repositorio proporciona información detallada y respuestas a preguntas clave relacionadas con los aspectos legales y éticos del proyecto EduTareas SRL. A continuación, se ofrece una breve descripción de las temáticas que encontrarán en la Wiki:
 1. **Conformación legal del grupo:** descripción de cómo el grupo se constituye como una entidad legal, incluyendo la estructura de la empresa, los socios, el CEO y los empleados. Detalles sobre los contratos que se establecerán y las cláusulas principales de dichos contratos.
@@ -615,10 +651,11 @@ La Wiki de nuestro repositorio proporciona información detallada y respuestas a
 11. **Denuncia por divulgación de datos personales:** legislación a la que un usuario puede recurrir en caso de denunciar a la empresa por divulgación de sus datos personales y cómo la empresa puede respaldarse jurídicamente.
 Estas temáticas están diseñadas para proporcionar una guía completa y detallada sobre los aspectos legales y éticos que deben considerarse al utilizar y gestionar el sistema EduTareas SRL. La Wiki actúa como un recurso fundamental para garantizar el cumplimiento de todas las regulaciones pertinentes y para asegurar que las operaciones del grupo se lleven a cabo de manera legal y ética.
 
-**Rquisistos, instalación y base de datos**
+## **6. REQUISITOS, INSTALACIÓN Y BASE DE DATOS**
 
 En primer lugar, si una persona desea hacer uso de la aplicación deberá asegurarse de tener instalado: Python, MySQL workbench y preferentemente un IDE como Visual Studio Code.
 Una vez instalado esos programas deberá instalar en el IDE la biblioteca de Python “mysql-connector-python” desde una nueva terminal. Nos permite conectar Python a nuestra base de datos de MySQL.
+
 Para utilizar nuestra aplicación, la persona deberá clonar nuestro repositorio “ proyecto-tscdia-1” o descargarlo ya que contiene el código de EduTareas, deberá importar la base de datos y luego en el IDE importar “mysql-connecor-python” y configurarlo de la siguiente manera para conectarse a nuestra base de datos:
 import mysql.connector config = { 'user': 'root, o el nombre de usuario configurado',
  'password': 'contraseña del usuario',
